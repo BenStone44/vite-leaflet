@@ -211,6 +211,7 @@ export default {
           width: 100%;
 
           .btn {
+            cursor: pointer;
             position: relative;
             margin: auto;
             height: 26px;

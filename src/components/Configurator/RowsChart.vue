@@ -5,17 +5,7 @@ import { useDataStore } from "../../stores/data";
 export default {
   setup() {
     const dataStore = useDataStore();
-    const { clearColor, removeAll, loadData, setCanvasSvgDimension, drawAll } =
-      dataStore;
-    const getStoryLine = () => {
-      clearColor();
-      removeAll();
-      loadData().then(() => {
-        setCanvasSvgDimension().then(() => {
-          drawAll();
-        });
-      });
-    };
+    const getStoryLine = () => {};
 
     const getStyle = (i: number, v: number) => {
       if (dataStore.tableHeaders[i].banned) {
@@ -235,6 +225,7 @@ export default {
       background-color: #777;
       text-align: center;
       line-height: 26px;
+      cursor: pointer;
     }
   }
 }

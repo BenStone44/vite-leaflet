@@ -22,23 +22,6 @@ export default {
       tk: -1,
     });
     const config = useConfigStore();
-    // const ticks = ref([
-    //   {
-    //     v: 0,
-    //     key: 0,
-    //     r: 0,
-    //   },
-    //   {
-    //     v: 0.3,
-    //     key: 2,
-    //     r: 0,
-    //   },
-    //   {
-    //     v: 1,
-    //     key: 3,
-    //     r: 1,
-    //   },
-    // ]);
     const max_v = computed(() => Math.max(...props.distribution));
     const sliderRef = ref(null);
 
