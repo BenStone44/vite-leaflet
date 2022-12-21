@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss">
 .map {
+  position: inherit;
   width: 100%;
   height: 100%;
 }

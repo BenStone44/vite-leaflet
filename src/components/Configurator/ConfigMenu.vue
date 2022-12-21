@@ -139,7 +139,7 @@ export default {
 
 <style lang="scss" scoped>
 .configurator {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 50px;
